@@ -1,0 +1,91 @@
+body{
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.outerClock{
+    width: 350px;
+    height: 350px;
+    background:#e5e5e5;
+    box-shadow: 6px 6px 8px gray,-6px -6px 8px white; 
+    position: relative;
+    margin-left: 35%;
+    margin-top: 10%;
+    border-radius: 50%;
+}
+.innerClock{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background: red;
+    border-radius: 50%;
+}
+.circle{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 46%;
+   left: 46%;
+   border-radius: 50%;
+   background: white;
+   z-index: 4;
+}
+#hour{
+    width: 10px;
+    height: 75px;
+    background: skyblue;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 2;
+}
+#min{
+    width: 8px;
+    height: 110px;
+    background: green;
+    position: absolute;
+    top: 11%;
+    left: 47%;
+    border-radius: 50% 50% 0px 0px;
+    transform-origin: bottom;
+    z-index: 1;
+}
+#sec{
+    width: 5px;
+    height: 130px;
+    background: pink;
+    position: absolute;
+    top: 8px;
+    left: 48%;
+    transform-origin: bottom;
+    z-index: 3;
+} 
+.time p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+    text-shadow: 1px 1px 2px gray;
+}
+.time p:nth-child(1){
+    position: absolute;
+    left: 44%;
+    top: -6%;
+}
+.time p:nth-child(2){
+    position: absolute;
+    left: 3%;
+    top: 40%;
+}
+.time p:nth-child(3){
+    position: absolute;
+    left: 49%;
+    top: 83%;
+}
+.time p:nth-child(4){
+    position: absolute;
+    left: 93%;
+    top: 36%;
+}
